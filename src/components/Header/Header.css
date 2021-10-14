@@ -1,0 +1,14 @@
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header .header {
+  padding-block: 1.5rem;
+}
+
+header .header img {
+  height: 2.25rem;
+}

@@ -1,0 +1,27 @@
+.feature {
+  width: 30%;
+  margin-block: 2rem;
+}
+
+.feature-img {
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 25px;
+  background-position: bottom left;
+  background-size: cover;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-img:hover {
+  padding-bottom: 120%;
+}
+
+@media screen and (max-width: 900px) {
+  .feature {
+    width: 40%;
+  }
+  .feature-img {
+    padding-bottom: 120%;
+  }
+}

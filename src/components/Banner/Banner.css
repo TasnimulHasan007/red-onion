@@ -1,0 +1,41 @@
+.banner {
+  min-height: 600px;
+  background: url(../../images/bannerbackground.png) no-repeat center
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 3rem;
+}
+
+.banner h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.banner .search-container {
+  display: flex;
+  max-width: 450px;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin-inline: auto;
+  background: #fff;
+  box-shadow: 0 4px 20px -2px rgb(0 0 0 / 10%);
+}
+
+.banner .search-container input {
+  padding-inline: 30px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+}
+
+.banner .search-container button {
+  width: 120px;
+  height: 100%;
+}

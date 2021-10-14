@@ -1,0 +1,29 @@
+footer {
+  background: var(--footer-bg);
+  color: #fff;
+  padding-block: 4rem;
+}
+
+footer img {
+  height: 2.25rem;
+}
+
+footer .footer-link {
+  line-height: 2;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer .footer-link:hover {
+  color: var(--primary-color);
+}
+
+footer .copyright {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    text-align: center;
+  }
+}
