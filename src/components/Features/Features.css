@@ -1,3 +1,23 @@
+.intro {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.intro h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  letter-spacing: 0.025rem;
+}
+
+.intro p {
+  max-width: 580px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.025rem;
+  margin-inline: auto;
+}
+
 .features-container {
   padding-block: 3rem;
 }
@@ -9,7 +29,7 @@
 }
 
 .feature:hover {
-  box-shadow: 10px 15px 20px -20px var(--accent-color);
+  box-shadow: 10px 10px 20px -20px var(--accent-color);
 }
 
 .feature img {
@@ -71,6 +91,7 @@
 }
 
 .feature > P {
+  font-weight: 400;
   font-size: 0.875rem;
   letter-spacing: 0.025rem;
   text-align: justify;

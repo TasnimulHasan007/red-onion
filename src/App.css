@@ -5,6 +5,7 @@
   --accent-color: #5d80f7;
   --accent-secondary: #19e270;
   --text-color: #353535;
+  --form-bg: #f5f5f5;
   --footer-bg: #191919;
 }
 
@@ -54,4 +55,76 @@ header .main-btn,
   border-radius: 20px;
   padding: 6px 20px;
   cursor: pointer;
+}
+
+.form {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(50vh - 0.9375rem);
+  margin-block: 3rem;
+}
+.form form {
+  max-width: 450px;
+  margin-inline: auto;
+}
+.form form img {
+  height: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.form form input,
+.form form button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.form form input {
+  padding: 1rem;
+  background: var(--form-bg);
+  border-bottom: 0.25rem solid transparent;
+}
+
+.form form input:focus {
+  border-bottom: 0.25rem solid var(--primary-color);
+}
+
+.form form button {
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.form form input::placeholder {
+  opacity: 0.5;
+}
+
+.form form a {
+  font-weight: 500;
+  color: var(--primary-color);
+  letter-spacing: 0.025rem;
+}
+
+.form hr {
+  border: none;
+  height: 0.09375rem;
+  background: var(--footer-bg);
+  margin-block: 1.5rem;
+}
+
+.form svg {
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+
+.form svg:hover {
+  color: #db0630;
 }

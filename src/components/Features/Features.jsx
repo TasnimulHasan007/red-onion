@@ -12,6 +12,14 @@ import feature3 from "../../images/feature-3.png"
 const Features = () => {
   return (
     <Container maxWidth="lg">
+      <div className="intro">
+        <h2>Why you choose us</h2>
+        <p>
+          Barton waited twenty always repaire in within we do. An delighted
+          offending curiously my is dashwoods at. Boy prosperous increasing
+          surrounded.
+        </p>
+      </div>
       <Grid container spacing={3} className="features-container">
         <Grid item lg={4} md={6} s={12} className="feature">
           <img src={feature1} alt="" />
