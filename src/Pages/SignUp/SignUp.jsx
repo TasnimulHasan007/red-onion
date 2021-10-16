@@ -1,24 +1,18 @@
 import React from "react"
-import { Button, Container, Stack } from "@mui/material"
+import { Container, Stack } from "@mui/material"
 import logo from "../../images/logo-dark.png"
 import { Link } from "react-router-dom"
-import { styled } from "@mui/system"
 import FacebookIcon from "@mui/icons-material/Facebook"
 import GoogleIcon from "@mui/icons-material/Google"
 import GitHubIcon from "@mui/icons-material/GitHub"
+import { ContainedButton } from "../../App"
+import useFirebase from "../../hooks/useFirebase"
 
 const SignUp = () => {
-  const SignUp = styled(Button)(() => ({
-    color: "#fff",
-    backgroundColor: "#F91944",
-    "&:hover": {
-      backgroundColor: "#db0630",
-    },
-  }))
-
   const handleSignUp = (e) => {
     e.preventDefault()
   }
+  const { googleSignIn } = useFirebase()
 
   return (
     <div className="form">
@@ -29,12 +23,12 @@ const SignUp = () => {
           <input type="email" placeholder="Email" required />
           <input type="password" placeholder="Password" required />
           <input type="password" placeholder="Confirm Password" required />
-          <SignUp type="submit">Sign Up</SignUp>
+          <ContainedButton type="submit">Sign Up</ContainedButton>
           <Link to="/login">Already have an account?</Link>
           <hr />
           <Stack direction="row" justifyContent="space-around">
             <FacebookIcon />
-            <GoogleIcon />
+            <GoogleIcon onClick={googleSignIn} />
             <GitHubIcon />
           </Stack>
         </form>

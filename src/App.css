@@ -45,6 +45,8 @@ a {
 button,
 a {
   outline: none;
+  background: none;
+  border: none;
 }
 
 .main-btn,
@@ -62,7 +64,7 @@ header .main-btn,
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(50vh - 0.9375rem);
+  min-height: calc(100vh - 29.75rem);
   margin-block: 3rem;
 }
 .form form {

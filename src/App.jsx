@@ -5,6 +5,29 @@ import Header from "./components/Header/Header"
 import SignUp from "./Pages/SignUp/SignUp"
 import Home from "./Pages/Home/Home"
 import LogIn from "./Pages/LogIn/LogIn"
+import { styled } from "@mui/system"
+import { Badge, Button } from "@mui/material"
+
+export const StyledBadge = styled(Badge)(() => ({
+  "& .MuiBadge-badge": {
+    background: "#F91944",
+    color: "#fff",
+  },
+}))
+
+export const TextButton = styled(Button)(() => ({
+  color: "#F91944",
+  "&:hover": {
+    backgroundColor: "#f9194415",
+  },
+}))
+export const ContainedButton = styled(Button)(() => ({
+  color: "#fff",
+  backgroundColor: "#F91944",
+  "&:hover": {
+    backgroundColor: "#db0630",
+  },
+}))
 
 function App() {
   return (

@@ -11,6 +11,9 @@
 # production
 /build
 
+# authentication
+/src/Firebase
+
 # misc
 .DS_Store
 .env.local
